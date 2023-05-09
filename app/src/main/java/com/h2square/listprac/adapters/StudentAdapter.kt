@@ -33,9 +33,13 @@ class StudentAdapter(val mContext: Context,
         //
         val koreanAge =2023 - studentData.birthYear +1
 
-        birthTxt.text ="(${koreanAge}세)"
+        birthTxt.text ="(${studentData.getMyAge()}세)"
 
         return row
+    }
+
+    fun aaa(){
+
     }
 
 }
